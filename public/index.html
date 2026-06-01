@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps & Cloud Portfolio</title>
+    <meta
+      name="description"
+      content="Professional portfolio for a DevOps and Cloud Computing enthusiast."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <span class="brand">CloudOps Portfolio</span>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">DevOps • Cloud • Automation</p>
+            <h1 id="hero-name">Building dependable systems with modern infrastructure.</h1>
+            <p id="hero-title" class="hero-title"></p>
+            <p id="hero-summary" class="hero-summary"></p>
+
+            <div class="hero-actions">
+              <a href="#about" class="button button-primary">Explore Profile</a>
+              <a href="#contact" class="button button-secondary">Get In Touch</a>
+            </div>
+          </section>
+
+          <aside class="hero-panel">
+            <p class="panel-label">Engineering Snapshot</p>
+            <div id="stats" class="stats"></div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section id="about" class="section">
+          <div class="section-heading">
+            <p class="section-kicker">About Me</p>
+            <h2>Focused on automation, reliability, and production-ready delivery.</h2>
+          </div>
+          <div id="about-content" class="about-grid"></div>
+        </section>
+
+        <section class="section section-accent">
+          <div class="section-heading">
+            <p class="section-kicker">What I Work On</p>
+            <h2>Practical skills for modern application delivery.</h2>
+          </div>
+          <div id="highlights" class="highlights-grid"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Stack</p>
+            <h2>Tools and technologies I use across development and infrastructure.</h2>
+          </div>
+          <div id="stack" class="stack-list"></div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+          <div class="section-heading">
+            <p class="section-kicker">Contact</p>
+            <h2>Send a quick message through the backend.</h2>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-card">
+              <p>
+                This demo includes a lightweight backend API for profile content and form
+                submissions, keeping the stack simple while still full-stack.
+              </p>
+              <div class="status-row">
+                <span class="status-dot"></span>
+                <span id="api-status">Checking backend status...</span>
+              </div>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Message
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project or opportunity"
+                  required
+                ></textarea>
+              </label>
+              <button type="submit" class="button button-primary">Send Message</button>
+              <p id="form-message" class="form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
